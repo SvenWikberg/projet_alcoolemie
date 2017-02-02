@@ -1,0 +1,2 @@
+C:\Users\wikbergs_info\Desktop\mercredi\calcul_acoolemie\calcul_acoolemie\bin\Debug\calcul_acoolemie.exe.config
+C:\Users\wikbergs_info\Desktop\jeudi\projet_alcoolemie\calcul_acoolemie\calcul_acoolemie\bin\Debug\calcul_acoolemie.exe.config

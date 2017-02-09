@@ -19,7 +19,7 @@ namespace calcul_acoolemie {
             }
         }
 
-        // Quantité en cl de la boisson
+        // Quantité en ml de la boisson
         double _quantity;
         public double Quantity {
             get {
@@ -57,13 +57,26 @@ namespace calcul_acoolemie {
         double _alcoholContent;
         public double AlcoholContent {
             get {
-                return Degree * Quantity;
+                //0.8 est car 1L d'alcool pur pèse 0.8kg
+                return ((Degree * Quantity) / 100) * 0.8;
             }
             set {
                 _alcoholContent = value;
             }
         }
 
+        public string Display {
+            get {
+                return Name + " " + Quantity + "ml " + Degree + "%";
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="name">Nom de la boisson</param>
+        /// <param name="quantity">Quantité en ml de la boisson</param>
+        /// <param name="degree">Degré d'alcool dans la boisson</param>
         public Drink(string name, double quantity, double degree) {
             Name = name;
             Quantity = quantity;

@@ -32,7 +32,7 @@
             this.lblPoid = new System.Windows.Forms.Label();
             this.cbxSexe = new System.Windows.Forms.ComboBox();
             this.nudPoid = new System.Windows.Forms.NumericUpDown();
-            this.btnCalculer = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
             this.lstbxBoissons = new System.Windows.Forms.ListBox();
             this.lstbxBu = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudPoid)).BeginInit();
@@ -58,6 +58,7 @@
             // 
             // cbxSexe
             // 
+            this.cbxSexe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxSexe.FormattingEnabled = true;
             this.cbxSexe.Items.AddRange(new object[] {
             "Homme",
@@ -74,14 +75,15 @@
             this.nudPoid.Size = new System.Drawing.Size(120, 20);
             this.nudPoid.TabIndex = 3;
             // 
-            // btnCalculer
+            // btnStart
             // 
-            this.btnCalculer.Location = new System.Drawing.Point(507, 4);
-            this.btnCalculer.Name = "btnCalculer";
-            this.btnCalculer.Size = new System.Drawing.Size(75, 23);
-            this.btnCalculer.TabIndex = 4;
-            this.btnCalculer.Text = "Calculer";
-            this.btnCalculer.UseVisualStyleBackColor = true;
+            this.btnStart.Location = new System.Drawing.Point(473, 4);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(109, 23);
+            this.btnStart.TabIndex = 4;
+            this.btnStart.Text = "Choisir les boissons";
+            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // lstbxBoissons
             // 
@@ -90,6 +92,7 @@
             this.lstbxBoissons.Name = "lstbxBoissons";
             this.lstbxBoissons.Size = new System.Drawing.Size(200, 420);
             this.lstbxBoissons.TabIndex = 5;
+            this.lstbxBoissons.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lstbxBoissons_MouseDoubleClick);
             // 
             // lstbxBu
             // 
@@ -106,13 +109,16 @@
             this.ClientSize = new System.Drawing.Size(594, 463);
             this.Controls.Add(this.lstbxBu);
             this.Controls.Add(this.lstbxBoissons);
-            this.Controls.Add(this.btnCalculer);
+            this.Controls.Add(this.btnStart);
             this.Controls.Add(this.nudPoid);
             this.Controls.Add(this.cbxSexe);
             this.Controls.Add(this.lblPoid);
             this.Controls.Add(this.lblSexe);
+            this.MaximumSize = new System.Drawing.Size(610, 501);
+            this.MinimumSize = new System.Drawing.Size(610, 501);
             this.Name = "MainView";
             this.Text = "Calcul Alcoolémie";
+            this.Load += new System.EventHandler(this.MainView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudPoid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -125,7 +131,7 @@
         private System.Windows.Forms.Label lblPoid;
         private System.Windows.Forms.ComboBox cbxSexe;
         private System.Windows.Forms.NumericUpDown nudPoid;
-        private System.Windows.Forms.Button btnCalculer;
+        private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.ListBox lstbxBoissons;
         private System.Windows.Forms.ListBox lstbxBu;
     }

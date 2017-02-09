@@ -1,2 +1,11 @@
 C:\Users\wikbergs_info\Desktop\mercredi\calcul_acoolemie\calcul_acoolemie\bin\Debug\calcul_acoolemie.exe.config
 C:\Users\wikbergs_info\Desktop\jeudi\projet_alcoolemie\calcul_acoolemie\calcul_acoolemie\bin\Debug\calcul_acoolemie.exe.config
+C:\Users\wikbergs_info\Desktop\jeudi\projet_alcoolemie\calcul_acoolemie\calcul_acoolemie\bin\Debug\calcul_acoolemie.exe
+C:\Users\wikbergs_info\Desktop\jeudi\projet_alcoolemie\calcul_acoolemie\calcul_acoolemie\bin\Debug\calcul_acoolemie.pdb
+C:\Users\wikbergs_info\Desktop\jeudi\projet_alcoolemie\calcul_acoolemie\calcul_acoolemie\obj\Debug\calcul_acoolemie.csprojResolveAssemblyReference.cache
+C:\Users\wikbergs_info\Desktop\jeudi\projet_alcoolemie\calcul_acoolemie\calcul_acoolemie\obj\Debug\calcul_acoolemie.MainView.resources
+C:\Users\wikbergs_info\Desktop\jeudi\projet_alcoolemie\calcul_acoolemie\calcul_acoolemie\obj\Debug\calcul_acoolemie.Properties.Resources.resources
+C:\Users\wikbergs_info\Desktop\jeudi\projet_alcoolemie\calcul_acoolemie\calcul_acoolemie\obj\Debug\calcul_acoolemie.csproj.GenerateResource.Cache
+C:\Users\wikbergs_info\Desktop\jeudi\projet_alcoolemie\calcul_acoolemie\calcul_acoolemie\obj\Debug\calcul_acoolemie.exe
+C:\Users\wikbergs_info\Desktop\jeudi\projet_alcoolemie\calcul_acoolemie\calcul_acoolemie\obj\Debug\calcul_acoolemie.pdb
+C:\Users\wikbergs_info\Desktop\jeudi\projet_alcoolemie\calcul_acoolemie\calcul_acoolemie\obj\Debug\calcul_acoolemie.GraphView.resources

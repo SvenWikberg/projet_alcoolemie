@@ -7,16 +7,12 @@ using System.Threading.Tasks;
 
 namespace calcul_acoolemie {
     public class ModelCalculAlcoolemie {
-        //MainView _myMainView;
-        //public MainView MyMainView {
-        //    get {
-        //        return _myMainView;
-        //    }
-
-        //    set {
-        //        _myMainView = value;
-        //    }
-        //}
+        // pourcentage d'alcool supprimer du corp humain par heure
+        public static double BLOOD_ALCOHOL_LOOSING_HOUR {
+            get {
+                return 0.015;
+            }
+        }
 
         // en %
         double _bloodAlcohol;
@@ -62,7 +58,6 @@ namespace calcul_acoolemie {
         public ModelCalculAlcoolemie() {
             BloodAlcohol = 0.0;
             AlcoholConsumed = 0;
-            //MyMainView = myMainView;
             Drinks = new List<Drink>();
             Drinks.Add(new Drink("Bière", 250, 8));
             Drinks.Add(new Drink("Bière légère", 250, 4));

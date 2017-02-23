@@ -53,6 +53,7 @@
             this.MinimumSize = new System.Drawing.Size(807, 292);
             this.Name = "GraphView";
             this.Text = "GraphView";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GraphView_FormClosing);
             this.Load += new System.EventHandler(this.GraphView_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.GraphView_Paint);
             this.ResumeLayout(false);

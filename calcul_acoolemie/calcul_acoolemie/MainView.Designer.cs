@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblSexe = new System.Windows.Forms.Label();
             this.lblPoid = new System.Windows.Forms.Label();
             this.cbxSexe = new System.Windows.Forms.ComboBox();
@@ -35,6 +36,8 @@
             this.btnStart = new System.Windows.Forms.Button();
             this.lstbxBoissons = new System.Windows.Forms.ListBox();
             this.lstbxBu = new System.Windows.Forms.ListBox();
+            this.timBloodAlcohol = new System.Windows.Forms.Timer(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.nudPoid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,6 +105,12 @@
             this.lstbxBu.Size = new System.Drawing.Size(200, 420);
             this.lstbxBu.TabIndex = 6;
             // 
+            // timBloodAlcohol
+            // 
+            this.timBloodAlcohol.Enabled = true;
+            this.timBloodAlcohol.Interval = 1000;
+            this.timBloodAlcohol.Tick += new System.EventHandler(this.timBloodAlcohol_Tick);
+            // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -134,6 +143,8 @@
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.ListBox lstbxBoissons;
         private System.Windows.Forms.ListBox lstbxBu;
+        private System.Windows.Forms.Timer timBloodAlcohol;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

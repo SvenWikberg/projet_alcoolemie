@@ -8,10 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace calcul_acoolemie
-{
-    public partial class MainView : Form
-    {
+namespace calcul_acoolemie {
+    public partial class MainView : Form {
         private ModelCalculAlcoolemie _myModelCalculAlcoolemie;
         public ModelCalculAlcoolemie MyModelCalculAlcoolemie {
             get {
@@ -23,8 +21,7 @@ namespace calcul_acoolemie
             }
         }
 
-        public MainView()
-        {
+        public MainView() {
             InitializeComponent();
         }
 
@@ -46,11 +43,15 @@ namespace calcul_acoolemie
             lstbxBoissons.DataSource = MyModelCalculAlcoolemie.Drinks;
             lstbxBoissons.DisplayMember = "Display";
 
-            MyModelCalculAlcoolemie.ShowGraphView(); 
+            MyModelCalculAlcoolemie.ShowGraphView();
         }
 
         private void lstbxBoissons_MouseDoubleClick(object sender, MouseEventArgs e) {
             lstbxBu.Items.Add(MyModelCalculAlcoolemie.DrinkADrink((Drink)lstbxBoissons.SelectedItem, (int)nudPoid.Value, cbxSexe.SelectedIndex).Display);
+        }
+
+        private void timBloodAlcohol_Tick(object sender, EventArgs e) {
+            MyModelCalculAlcoolemie.BloodAlcohol -= ModelCalculAlcoolemie.BLOOD_ALCOHOL_LOOSING_HOUR;
         }
     }
 }
